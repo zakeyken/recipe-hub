@@ -1,8 +1,8 @@
 // API base URL - replace with your actual API Gateway URL
 const API_BASE_URL = 'https://067gs6t455.execute-api.us-east-1.amazonaws.com/dev';
 
-// Add your API key or authentication token here
-const API_KEY = 'ALwxtlSjRe33y6VHehRXV4LsNdTJbhg84in15py9';
+// Get API key from environment variable
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 // Helper function for API requests
 async function apiRequest(endpoint, method = 'GET', data = null) {
